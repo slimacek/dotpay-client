@@ -1,0 +1,25 @@
+{
+    "name": "mirolabs/dotpay-client",
+    "description": "service for api dotpay admin and transaction",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mirobrando",
+            "email": "mirobrando@wp.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "mirolabs\\dotpay\\client\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5",
+        "jms/serializer": "dev-master", 
+        "guzzlehttp/guzzle": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    }
+}
