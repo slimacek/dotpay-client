@@ -60,7 +60,7 @@ class RequestParam
 
     /**
      * @var int
-     * @JMS\Type("int")
+     * @JMS\Type("integer")
      */
     private $channel;
 
@@ -87,13 +87,13 @@ class RequestParam
      *
      * @var string
      * @JMS\Type("string")
-     * @JMS\SerializedName("USL")
+     * @JMS\SerializedName("URL")
      */
     private $url;
 
     /**
      * @var int
-     * @JMS\Type("int")
+     * @JMS\Type("integer")
      */
     private $type;
 

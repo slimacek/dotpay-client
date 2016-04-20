@@ -7,7 +7,7 @@ class Notice
 
     /**
      * @var int
-     * @JMS\Type("int")
+     * @JMS\Type("integer")
      */
     private $id;
 

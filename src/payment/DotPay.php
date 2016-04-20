@@ -78,6 +78,7 @@ class DotPay
         $check.= $request->getChannelLock();
         $check.= $request->getChannelGroupsString();
         $check.= $request->getUrl();
+        $check.= $request->getType();
         $check.= $request->getButtonText();
         $check.= $request->getUrlc();
         $check.= $request->getFirstname();

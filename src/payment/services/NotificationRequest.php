@@ -65,7 +65,6 @@ class NotificationRequest
         $control.= $notice->getChannel();
         $control.= $notice->getChannelCountry();
         $control.= $notice->getGeoIpCountry();
-
         return $notice->getSignature() === hash('sha256', $control);
     }
 
