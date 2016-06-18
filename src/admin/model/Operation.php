@@ -65,7 +65,7 @@ class Operation
 
     /**
      * @var int
-     * @JMS\Type("int")
+     * @JMS\Type("integer")
      * @JMS\SerializedName("account_id")
      */
     private $accountId;

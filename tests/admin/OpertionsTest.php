@@ -26,9 +26,21 @@ class OpertionsTest extends \PHPUnit_Framework_TestCase
     public function testShouldByGetOpertaions()
     {
         $param = new model\OperationParam();
-        //print_r($this->operations->getOperatons($param));
+        $result = $this->operations->getOperatons($param);
+        $this->assertInstanceOf("mirolabs\dotpay\client\admin\model\Pageable", $result);
+    }
 
+    public function testShouldByGetOpertaion()
+    {
+        $param = new model\OperationParam();
+        $result = $this->operations->getOperation('M9054-2210');
+        $this->assertInstanceOf("mirolabs\dotpay\client\admin\model\Operation", $result);
+    }
 
-        //$this->assertInstanceOf("mirolabs\dotpay\client\admin\model\Pageable", $this->accounts->getAccounts());
+    public function testShouldByGetOpertaionsPayout()
+    {
+        $param = new model\OperationParam();
+        $result = $this->operations->getOperationsPayout('M9316-6242');
+        $this->assertInstanceOf("mirolabs\dotpay\client\admin\model\Pageable", $result);
     }
 }

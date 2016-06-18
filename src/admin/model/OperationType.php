@@ -8,8 +8,9 @@ class OperationType
     const PAYOUT = 'payout';
     const COMPLAINT = 'complaint';
     const RELEASE_ROLLBACK = 'release_rollback';
+    const PAYOUT_ANY_AMOUNT = 'payout_any_amount';
 
-    /**
+        /**
      * @var string
      */
     private $type;
@@ -39,7 +40,8 @@ class OperationType
             self::PAYMENT_MULTIMERCHANT_CHILD,
             self::PAYOUT,
             self::COMPLAINT,
-            self::RELEASE_ROLLBACK
+            self::RELEASE_ROLLBACK,
+            self::PAYOUT_ANY_AMOUNT
         ];
     }
 }
