@@ -13,7 +13,7 @@ class PaymentLink
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\SerializedName("$payment_url")
+     * @JMS\SerializedName("payment_url")
      */
     private $paymentUrl;
 
