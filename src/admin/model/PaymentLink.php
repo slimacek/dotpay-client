@@ -56,7 +56,7 @@ class PaymentLink
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\SerializedName("channelId")
+     * @JMS\SerializedName("channel_id")
      */
     private $channelId;
 
