@@ -4,6 +4,10 @@ use JMS\Serializer\Annotation as JMS;
 
 class PaymentLink
 {
+    const REDIRECTION_TYPE_BUTTON = 0;
+    const REDIRECTION_TYPE_DEFAULT = 2;
+    const REDIRECTION_TYPE_AUTO = 4;
+    
     /**
      * @var string
      * @JMS\Type("string")
@@ -76,7 +80,7 @@ class PaymentLink
     /**
      * @var string
      * @JMS\Type("string")
-     * @JMS\SerializedName("redirection_type")
+     * @JMS\SerializedName("type")
      */
     private $redirectionType;
 
